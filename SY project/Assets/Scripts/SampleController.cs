@@ -10,10 +10,4 @@ public class SampleController : MonoBehaviour
         Singleton.Instance.InscreaseScore(10);
         GameManager.Instance.InscreaseScore(15);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
