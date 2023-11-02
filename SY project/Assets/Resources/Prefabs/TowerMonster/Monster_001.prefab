@@ -13,10 +13,10 @@ GameObject:
   - component: {fileID: 7302530264203654484}
   - component: {fileID: 7302530264203654475}
   - component: {fileID: 7302530264203654474}
-  - component: {fileID: 7700660841658897818}
+  - component: {fileID: 6764798922667868002}
   m_Layer: 6
   m_Name: Monster_001
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,8 +112,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6471e06e41c0f847a75e179c472728d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpee: 1
+  SpeedMod: 1
+  timeSinceStart: 0
   moveSpeed: 5
---- !u!114 &7700660841658897818
+--- !u!114 &6764798922667868002
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -122,16 +125,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7302530264203654473}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d68579325b6af07408a456574e8445b8, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ffab5a6704ef0647b6ebbdc332c99a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 3
-  fireRate: 1
-  isEnemy:
-    serializedVersion: 2
-    m_Bits: 64
-  colliderInRange: []
-  enemiesInRange: []
-  checkCounter: 0
-  checkTime: 0.2
-  enemiesUpdate: 0
+  totalHealth: 0
